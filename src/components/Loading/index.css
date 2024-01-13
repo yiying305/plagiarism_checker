@@ -1,0 +1,344 @@
+html{
+    --screen-size: calc(100vh * 1/3);
+    --ball-size: 15px;
+}
+
+.loading-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dot {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    transform-origin: center calc(var(--screen-size) / 2 + var(--ball-size) / 2);
+}
+
+.dot::before {
+    content: '';
+    position: absolute;
+    width: var(--ball-size);
+    height: var(--ball-size);
+    top: -100%;
+    border-radius: 50%;
+    background: #000;
+    animation: rotate-1 2s linear infinite;
+}
+
+@keyframes rotate-1 {
+    25% {
+        transform: translate3d(0, 100%, var(--ball-size));
+    }
+
+    50% {
+        transform: translate3d(0, 200%, 0);
+    }
+
+    75% {
+        transform: translate3d(0, 100%, -var(--ball-size));
+    }
+}
+
+.dot::after {
+    content: '';
+    position: absolute;
+    width: var(--ball-size);
+    height: var(--ball-size);
+    top: 100%;
+    border-radius: 50%;
+    background: #fb923c;
+    animation: rotate-2 2s linear infinite;
+}
+
+@keyframes rotate-2 {
+    25% {
+        transform: translate3d(0, -100%, var(--ball-size));
+    }
+
+    50% {
+        transform: translate3d(0, -200%, 0);
+    }
+
+    75% {
+        transform: translate3d(0, -100%, var(--ball-size));
+    }
+}
+
+.dot:nth-child(1) {
+    transform: translateX(-50%) rotate(0deg);
+}
+
+.dot:nth-child(2) {
+    transform: translateX(-50%) rotate(18deg);
+}
+
+.dot:nth-child(3) {
+    transform: translateX(-50%) rotate(36deg);
+}
+
+.dot:nth-child(4) {
+    transform: translateX(-50%) rotate(54deg);
+}
+
+.dot:nth-child(5) {
+    transform: translateX(-50%) rotate(72deg);
+}
+
+.dot:nth-child(6) {
+    transform: translateX(-50%) rotate(90deg);
+}
+
+.dot:nth-child(7) {
+    transform: translateX(-50%) rotate(108deg);
+}
+
+.dot:nth-child(8) {
+    transform: translateX(-50%) rotate(126deg);
+}
+
+.dot:nth-child(9) {
+    transform: translateX(-50%) rotate(144deg);
+}
+
+.dot:nth-child(10) {
+    transform: translateX(-50%) rotate(162deg);
+}
+
+.dot:nth-child(11) {
+    transform: translateX(-50%) rotate(180deg);
+}
+
+.dot:nth-child(12) {
+    transform: translateX(-50%) rotate(198deg);
+}
+
+.dot:nth-child(13) {
+    transform: translateX(-50%) rotate(216deg);
+}
+
+.dot:nth-child(14) {
+    transform: translateX(-50%) rotate(234deg);
+}
+
+.dot:nth-child(15) {
+    transform: translateX(-50%) rotate(252deg);
+}
+
+.dot:nth-child(16) {
+    transform: translateX(-50%) rotate(270deg);
+}
+
+.dot:nth-child(17) {
+    transform: translateX(-50%) rotate(288deg);
+}
+
+.dot:nth-child(18) {
+    transform: translateX(-50%) rotate(306deg);
+}
+
+.dot:nth-child(19) {
+    transform: translateX(-50%) rotate(324deg);
+}
+
+.dot:nth-child(20) {
+    transform: translateX(-50%) rotate(342deg);
+}
+
+.dot:nth-child(1)::before {
+    animation-delay: calc(-2s);
+}
+
+.dot:nth-child(1)::after {
+    animation-delay: calc(-2s);
+}
+
+.dot:nth-child(2)::before {
+    animation-delay: calc(-2s/ 20 * (1) *6);
+}
+
+.dot:nth-child(2)::after {
+    animation-delay: calc(-2s/ 20 * (1) *6);
+}
+
+.dot:nth-child(3)::before {
+    animation-delay: calc(-2s/ 20 * (2) *6);
+}
+
+.dot:nth-child(3)::after {
+    animation-delay: calc(-2s/ 20 * (2) *6);
+}
+
+.dot:nth-child(4)::before {
+    animation-delay: calc(-2s/ 20 * (3) *6);
+}
+
+.dot:nth-child(4)::after {
+    animation-delay: calc(-2s/ 20 * (3) *6);
+}
+
+.dot:nth-child(5)::before {
+    animation-delay: calc(-2s/ 20 * (4) *6);
+}
+
+.dot:nth-child(5)::after {
+    animation-delay: calc(-2s/ 20 * (4) *6);
+}
+
+.dot:nth-child(6)::before {
+    animation-delay: calc(-2s/ 20 * (5) *6);
+}
+
+.dot:nth-child(6)::after {
+    animation-delay: calc(-2s/ 20 * (5) *6);
+}
+
+.dot:nth-child(7)::before {
+    animation-delay: calc(-2s/ 20 * (6) *6);
+}
+
+.dot:nth-child(7)::after {
+    animation-delay: calc(-2s/ 20 * (6) *6);
+}
+
+.dot:nth-child(8)::before {
+    animation-delay: calc(-2s/ 20 * (7) *6);
+}
+
+.dot:nth-child(8)::after {
+    animation-delay: calc(-2s/ 20 * (7) *6);
+}
+
+.dot:nth-child(9)::before {
+    animation-delay: calc(-2s/ 20 * (8) *6);
+}
+
+.dot:nth-child(9)::after {
+    animation-delay: calc(-2s/ 20 * (8) *6);
+}
+
+.dot:nth-child(10)::before {
+    animation-delay: calc(-2s/ 20 * (9) *6);
+}
+
+.dot:nth-child(10)::after {
+    animation-delay: calc(-2s/ 20 * (9) *6);
+}
+
+.dot:nth-child(11)::before {
+    animation-delay: calc(-2s/ 20 * (10) *6);
+}
+
+.dot:nth-child(11)::after {
+    animation-delay: calc(-2s/ 20 * (10) *6);
+}
+
+.dot:nth-child(12)::before {
+    animation-delay: calc(-2s/ 20 * (11) *6);
+}
+
+.dot:nth-child(12)::after {
+    animation-delay: calc(-2s/ 20 * (11) *6);
+}
+
+.dot:nth-child(13)::before {
+    animation-delay: calc(-2s/ 20 * (12) *6);
+}
+
+.dot:nth-child(13)::after {
+    animation-delay: calc(-2s/ 20 * (12) *6);
+}
+
+.dot:nth-child(14)::before {
+    animation-delay: calc(-2s/ 20 * (13) *6);
+}
+
+.dot:nth-child(14)::after {
+    animation-delay: calc(-2s/ 20 * (13) *6);
+}
+
+.dot:nth-child(15)::before {
+    animation-delay: calc(-2s/ 20 * (14) *6);
+}
+
+.dot:nth-child(15)::after {
+    animation-delay: calc(-2s/ 20 * (14) *6);
+}
+
+.dot:nth-child(16)::before {
+    animation-delay: calc(-2s/ 20 * (15) *6);
+}
+
+.dot:nth-child(16)::after {
+    animation-delay: calc(-2s/ 20 * (15) *6);
+}
+
+.dot:nth-child(17)::before {
+    animation-delay: calc(-2s/ 20 * (16) *6);
+}
+
+.dot:nth-child(17)::after {
+    animation-delay: calc(-2s/ 20 * (16) *6);
+}
+
+.dot:nth-child(18)::before {
+    animation-delay: calc(-2s/ 20 * (17) *6);
+}
+
+.dot:nth-child(18)::after {
+    animation-delay: calc(-2s/ 20 * (17) *6);
+}
+
+.dot:nth-child(19)::before {
+    animation-delay: calc(-2s/ 20 * (18) *6);
+}
+
+.dot:nth-child(19)::after {
+    animation-delay: calc(-2s/ 20 * (18) *6);
+}
+
+.dot:nth-child(20)::before {
+    animation-delay: calc(-2s/ 20 * (19) *6);
+}
+
+.dot:nth-child(20)::after {
+    animation-delay: calc(-2s/ 20 * (19) *6);
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid black;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
